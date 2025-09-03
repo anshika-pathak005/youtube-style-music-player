@@ -16,6 +16,17 @@ This project helped me understand how playlists, play/pause logic, and dynamic U
 - Clean scrollable playlist section that auto-adjusts on small screens
 
 ## 📂 Project Structure
+```
+youtube-style-music-player/
+├── README.md  
+├── index.html  
+├── script.js  
+├── style.css  
+├── Images/  
+├── Songs/
+```
+## Screenshots
+<img width="1366" height="677" alt="image" src="https://github.com/user-attachments/assets/3d12a92f-17ab-4883-8aab-467e1af28a60" />
 
 ## 🚀 Usage
 1. Clone or download the repository.
