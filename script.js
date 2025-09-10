@@ -116,7 +116,7 @@ var forward = document.querySelector("#forward");
 function mainFunction() {
   var clutter = "";
   arr.forEach(function (elem, index) {
-    clutter += `<div class="items" id=${index}>
+    clutter += `<div class="items ${index == slectedSong ? "active-song" : ""}" id=${index}>
     <div class="left_side">
         <img src=${elem.img} alt="">
         <h4>${elem.songName}</h4>
@@ -207,6 +207,24 @@ backwar.addEventListener("click", function () {
     backwar.style.opacity = 0.4;
   }
 });
+
+// playing the next song as soon as first ends
+audio.addEventListener("ended", function () {
+  // play next song
+  if (slectedSong < arr.length - 1) {
+    slectedSong++;
+  } else {
+    slectedSong = 0; // if last song then start from beginning
+  }
+
+  mainFunction();
+  audio.play();
+
+  // Update play button icon
+  play.innerHTML = `<img src="Images/pause-line.png" alt="">`;
+  flag = 1;
+});
+
 
 // footer
 document.querySelectorAll(".footer > h3").forEach((btn) => {
