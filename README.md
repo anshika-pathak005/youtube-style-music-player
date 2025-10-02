@@ -1,6 +1,7 @@
 # 🎶 YouTube-Style Music Player
 
 A custom music player built with HTML, CSS, and JavaScript, inspired by a YouTube tutorial — but redesigned to be fully responsive and packed with thoughtful UI refinements. This project was my way of learning how music players are structured and adding small but important details I notice in real apps.
+### 🔗 [Live Demo](https://youtube-style-music-player.onrender.com/) 
 
 ## 🌟 Overview
 This project helped me understand how playlists, play/pause logic, and dynamic UI updates work. While the tutorial provided the base concept, I made it mobile-friendly and added practical improvements like button feedback, better song switching, and clean layout handling.
